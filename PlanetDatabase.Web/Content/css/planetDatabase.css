@@ -1,0 +1,29 @@
+﻿.hidden {
+    display: none;
+}
+
+.content {
+    width: 100%;
+}
+
+.description, .planets {
+    float: left;
+}
+
+.description {
+    width: 30%;
+}
+
+.planets {
+    width: 30%;
+}
+
+.planet {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.planet-name {
+    display: block;
+    font-weight: bold;
+}
