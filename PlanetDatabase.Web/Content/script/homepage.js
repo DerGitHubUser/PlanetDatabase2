@@ -5,8 +5,6 @@
     });
 
 var loadData = function () {
-    const planetsUrl = 'http://localhost:8124/Service/api/planets';
-
     var renderPlanets = function (planets) {
         const target = document.getElementById('planets');
         var planetElements = '';
@@ -30,12 +28,7 @@ var loadData = function () {
         }
     };
 
-    const request = new XMLHttpRequest();
-
-    request.open('GET', planetsUrl, true);
-    request.onreadystatechange = processGetPlanetsResponse;
-
-    request.send();
+    planetDatabase.planets.getAllPlanets(processGetPlanetsResponse);
 }
 
 var bindEvents = function () {
