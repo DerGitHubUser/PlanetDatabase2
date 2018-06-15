@@ -26,4 +26,8 @@
 .planet-name {
     display: block;
     font-weight: bold;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    user-select: none;
 }
